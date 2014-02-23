@@ -57,6 +57,9 @@ window.onload = function() {
     window.close();
   }
   
+  document.getElementById("max-window-button").onclick = function() {
+    require("nw.gui").Window.get().maximize();
+  }
   updateContentStyle();
   require("nw.gui").Window.get().show();
 }
